@@ -145,8 +145,12 @@ let total = myNumbers.reduce((acc, curr)=> acc+curr);
 
 // Did you know that George Foreman has five sons named George? Go ahead and change everyone's name in the notGeorge array to George using .map. Store the resulting array in a variable named 'forTheLoveOfGeorge'.
 const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
-
+notGeorge.splice(5,1)
 let forTheLoveOfGeorge = notGeorge.map(elem => elem = 'Georege')
+
+forTheLoveOfGeorge.push('Angela')
+
+forTheLoveOfGeorge
 
 //////////////////PROBLEM 19////////////////////
 
