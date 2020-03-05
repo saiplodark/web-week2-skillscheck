@@ -104,10 +104,11 @@ function bigOrSmall(arr){
 // Create a function called 'arrayReverser' that takes in one parameter, 'arr'. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array IN REVERSE (this means your counter should decrement), and then add each item to the 'reversed' array variable you created. Finally, return the 'reversed' array variable. 
 
 function arrayReverser(arr){
-	let reversed = []
-	for(i=0; i<arr.length; i++){
-
+	let reversed = [];
+	for(i=arr.length-1; i>=0; i--){
+		reversed.push(i)
 	}
+	return reversed
 }
 
 //////////////////PROBLEM 14 - 18 Setup////////////////////
@@ -138,7 +139,7 @@ let total = myNumbers.reduce((acc, curr)=> acc+curr);
 
 // Finally, use .forEach to find the index of each item in the array. To begin, create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
-// let myNumbersIndex = myNumbers.forEach(element => indexOf(element)).push()
+// let myNumbersIndex = myNumbers.forEach(element => indexOf(element).push())
 
 //////////////////PROBLEM 18////////////////////
 

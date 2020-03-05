@@ -25,13 +25,16 @@ let me = {
     firstName: 'Cory',
     superHeroName: 'GOD',
     homeTown: 'Taiwan',
-    superPowers: ['creat', 'control', 'destroy'],
+    superPowers: ['create', 'control', 'destroy'],
     superPowerXP: Math.floor(Math.random() * 100) + 1,
     profileImage: `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
 }
 
 //////////////////Step 3////////////////////
-// In this step, you will create three variables that will hold some data from your me object. The first variable you create should be 'regularName', and it should receive its value from the value of your firstName key on the me object above. The next variable is 'superName' which should have its value assigned as the value of the superHeroName property on the me object. The last variable you should create is 'homeTown' which will be the value of homeTown on the me object
+// In this step, you will create three variables that will hold some data from your me object. The first variable you create should be 'regularName', 
+// and it should receive its value from the value of your firstName key on the me object above. 
+// The next variable is 'superName' which should have its value assigned as the value of the superHeroName property on the me object. 
+// The last variable you should create is 'homeTown' which will be the value of homeTown on the me object
 
 let regularName = me.firstName;
 let superName = me.superHeroName;
@@ -48,7 +51,7 @@ function setColor(arr){
             arr[i] = '#4D4DFF'
          }
     }
-    function background(arr){}
+    background(arr[0],arr[1],arr[2])
 }
 
 //////////////////Step 5////////////////////
@@ -59,7 +62,7 @@ function setColor(arr){
 
 function setPowers(arr){
     for(i = 0; i<arr.length; i++){
-        console.log(createLi())
+        createLi(arr)
     }
 }
 
@@ -73,5 +76,5 @@ function setPowers(arr){
 
 function redactInfo(obj){
     Object.keys(obj).forEach(function(key){ obj[key] = "redacted" });
-    console.log(redacted())
+    redacted()
 }
